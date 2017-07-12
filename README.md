@@ -14,6 +14,21 @@ It today's world, being connected is at the forefront of just about everything. 
 
 Please feel free to use the contact page in order to add your school today. Be sure to include the Name, city and state.
 
+
+## Contributing
+
+To contribute to the project and add your own touch:
+
+**# 1** Fork it!
+
+**# 2** Create your feature branch: `git checkout -b my-new-feature`
+
+**# 3** Commit your changes: `git commit -m 'My new commit'`
+
+**# 4** Push to the branch: `git push origin my-new-feature`
+
+**# 5** Submit your pull request
+
 ## Author
 
 Evan Ciavaglia
