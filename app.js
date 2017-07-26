@@ -7,7 +7,7 @@ var passport = require('passport');
 var session = require('express-session');
 var nodemailer = require('nodemailer');
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 5000;
 var nav = [{
   Links: '/Colleges',
   Text: 'Colleges'
