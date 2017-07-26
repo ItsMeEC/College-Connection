@@ -13,7 +13,7 @@ var router = function(nav) {
   colRouter.route('/')
     .get(function(req, res) {
       var url =
-      'mongodb://localhost:27017/college';
+      'mongodb://<ec>:<ec123>@ds125053.mlab.com:25053/college-connection';
           mongodb.connect(url, function (err, db) {
             var collection = db.collection('colleges');
             collection.find({}).toArray(
@@ -30,7 +30,7 @@ var router = function(nav) {
     .get(function(req, res) {
       var id = new objectId(req.params.id);
       var url =
-      'mongodb://localhost:27017/college';
+      'mongodb://<ec>:<ec123>@ds125053.mlab.com:25053/college-connection';
           mongodb.connect(url, function (err, db) {
           var collection = db.collection('colleges');
             collection.findOne({_id: id},
