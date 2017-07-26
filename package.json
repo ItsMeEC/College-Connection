@@ -1,0 +1,39 @@
+{
+  "name": "college-connection",
+  "version": "1.0.0",
+  "description": "social media for colleges",
+  "main": "app.js",
+  "engines": {
+    "node": "7.7.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express-session": "^1.15.3",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30",
+    "nodemailer": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "passport": "^0.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsMeEC/College-Connection.git"
+  },
+  "keywords": [
+    "college",
+    "social",
+    "media"
+  ],
+  "author": "EC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsMeEC/College-Connection/issues"
+  },
+  "homepage": "https://github.com/ItsMeEC/College-Connection#readme"
+}
