@@ -1,6 +1,31 @@
 var express = require('express');
 var adminRouter = express.Router();
 var mongodb = require('mongodb').MongoClient;
+
+var router = function (nav) {
+
+    adminRouter.route('/addColleges')
+        .get(function (req, res) {
+            var url =
+                'mongodb://ec:ec123@ds125053.mlab.com:25053/college-connection';
+
+            mongodb.connect(url, function (err, db) {
+                var collection = db.collection('colleges');
+                collection.insertMany(colleges,
+                    function (err, results) {
+                        res.send(results);
+                        db.close();
+                    }
+                );
+
+            });
+
+            //res.send('inserting colleges');
+        });
+
+    return adminRouter;
+};
+
 var colleges = [
         {
             Name: 'University of Alabama',
@@ -162,29 +187,5 @@ var colleges = [
             Twitter: 'https://twitter.com/TempleUniv',
             Image: 'https://scontent-lga3-1.cdninstagram.com/t51.2885-19/10954457_371615229687090_912055651_a.jpg'
         }];
-
-var router = function (nav) {
-
-    adminRouter.route('/addColleges')
-        .get(function (req, res) {
-            var url =
-                'mongodb://ec:ec123@ds125053.mlab.com:25053/college-connection';
-
-            mongodb.connect(url, function (err, db) {
-                var collection = db.collection('colleges');
-                collection.insertMany(colleges,
-                    function (err, results) {
-                        res.send(results);
-                        db.close();
-                    }
-                );
-
-            });
-
-            //res.send('inserting colleges');
-        });
-
-    return adminRouter;
-};
 
 module.exports = router;
