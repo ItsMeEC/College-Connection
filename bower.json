@@ -1,9 +1,9 @@
 {
-  "name": "node-book-store",
-  "description": "online book library with node.js",
+  "name": "college connection",
+  "description": "college connection",
   "main": "app.js",
   "authors": [
-    "George Codat Tudoran"
+    "EC"
   ],
   "license": "ISC",
   "keywords": [
@@ -14,7 +14,7 @@
     "party",
     "Api's"
   ],
-  "homepage": "https://github.com/georgevc15/node-book-library",
+  "homepage":,
   "ignore": [
     "**/.*",
     "node_modules",
