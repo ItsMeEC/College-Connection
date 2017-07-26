@@ -168,7 +168,7 @@ var router = function (nav) {
     adminRouter.route('/addColleges')
         .get(function (req, res) {
             var url =
-                'mongodb://<ec>:<ec123>@ds125053.mlab.com:25053/college-connection';
+                'mongodb://ec:ec123@ds125053.mlab.com:25053/college-connection';
 
             mongodb.connect(url, function (err, db) {
                 var collection = db.collection('colleges');

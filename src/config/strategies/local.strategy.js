@@ -8,7 +8,7 @@ module.exports = function() {
       passwordField: 'password'
     },
     function(username, password, done) {
-      var url = 'mongodb://<ec>:<ec123>@ds125053.mlab.com:25053/college-connection';
+      var url = 'mongodb://ec:ec123@ds125053.mlab.com:25053/college-connection';
       mongodb.connect(url, function(err, db) {
         var collection = db.collection('users');
         collection.findOne({

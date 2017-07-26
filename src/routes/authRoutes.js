@@ -7,7 +7,7 @@ var router = function() {
   authRouter.route('/signUp')
     .post(function(req, res) {
       console.log(req.body);
-      var url = 'mongodb://<ec>:<ec123>@ds125053.mlab.com:25053/college-connection';
+      var url = 'mongodb://ec:ec123@ds125053.mlab.com:25053/college-connection';
       mongodb.connect(url, function(err, db) {
         var collection = db.collection('users');
         var user = {
